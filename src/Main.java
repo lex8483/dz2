@@ -1,6 +1,13 @@
 public class Main {
     public static void main(String[] args) {
+        task1();
+        task2();
+        task3();
+        task4();
+        task5();
+    }
 
+    public static void task1() {
         byte a = 1;
         short b = 2;
         int c = 3;
@@ -9,17 +16,21 @@ public class Main {
         double f = 5.3456;
         char k = 33;
         boolean l = true;
+    }
 
-//------------------------------------------------------------------------------------
+    //------------------------------------------------------------------------------------
+    public static void task2() {
+
         double ves1 = 78.2;
         double ves2 = 82.7;
         var totalWeight = ves1 + ves2;
-        var difference = ves2 - ves1;
+        var difference = Math.abs(ves1 - ves2);
         System.out.println(totalWeight);
         System.out.println(difference);
+    }
 
-//------------------------------------------------------------------------------------
-
+    //------------------------------------------------------------------------------------
+    public static void task3() {
         int banana = 80;
         int milk = 105;
         int ice = 100;
@@ -27,22 +38,21 @@ public class Main {
         int weight = banana * 5 + milk * 2 + ice * 2 + eggs * 4;
         weight /= 1000;
         System.out.println("Вес завтрака " + weight + " кг");
+    }
 
-//------------------------------------------------------------------------------------
+    //------------------------------------------------------------------------------------
+    public static void task4() {
 
-
-        double wes = 7000;
-        double day = 0;
-        double day1 = 0;
-        day = wes / 250;
-        day1 = wes / 500;
+        int wes = 7000;
+        int day = wes / 250;
+        int day1 = wes / 500;
         System.out.println("Потеряет в весе по 250 грамм за " + day + " дней" + " и потеярет, если по 500 грамм за " + day1 + " дней");
-        double day2 = 0;
-        day2 = (day1 + day) / 2;
+        double day2 = (day1 + day) / (2 * 1.0);
         System.out.println("В срднем похудеет за " + day2 + " день");
+    }
 
-//--------------------------------------------------------------------------------------------
-
+    //--------------------------------------------------------------------------------------------
+    public static void task5() {
         int masha = 67760;
         double masha1 = 0;
         double sumMasha = 0;
@@ -76,6 +86,6 @@ public class Main {
         System.out.println("Денис теперь получает " + denis + " рублей. Годовой доход вырос на " + (sumDenis1 - sumDenis) + " рублей");
         System.out.println("Кристина теперь получает " + kris + " рублей. Годовой доход вырос на " + (sumKris1 - sumKris) + " рублей");
 
-
     }
+
 }
