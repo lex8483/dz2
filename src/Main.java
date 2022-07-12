@@ -14,9 +14,10 @@ public class Main {
         long d = 4L;
         float g = 2.34f;
         double f = 5.3456;
-        char k = 33;
+        char k = 'c';
         boolean l = true;
         System.out.println("--------------------------------------------------");
+        System.out.println(k);
     }
 
     //------------------------------------------------------------------------------------
@@ -68,9 +69,9 @@ public class Main {
         int sumDenis = denis * 12;
         int sumKris = kris * 12;
         // после повышения
-        double masha1 = masha * 0.1;
-        double denis1 = denis * 0.1;
-        double kris1 = kris * 0.1;
+        var masha1 = masha * 0.1;
+        var denis1 = denis * 0.1;
+        var kris1 = kris * 0.1;
 
         masha += masha1;
         denis += denis1;
