@@ -53,7 +53,7 @@ public class Main {
         int day = wes / 250;
         int day1 = wes / 500;
         System.out.println("Потеряет в весе по 250 грамм за " + day + " дней" + " и потеярет, если по 500 грамм за " + day1 + " дней");
-        double day2 = (day1 + day) / (2 * 1.0);
+        var day2 = (day1 + day) / 2;
         System.out.println("В срднем похудеет за " + day2 + " день");
         System.out.println("--------------------------------------------------");
 
